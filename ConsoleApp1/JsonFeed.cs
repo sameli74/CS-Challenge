@@ -26,12 +26,14 @@ namespace ConsoleApp1{
     		private static string replace_name(string joke, string firstname, string lastname){
     			int index = joke.IndexOf("Chuck");
 				while (index!=-1){
-					string firstPart = joke.Substring(0, index);
-					string secondPart = joke.Substring(0 + index + "Chuck Norris".Length, joke.Length - (index + "Chuck Norris".Length));
-					joke = firstPart + firstname+ " "  + lastname + secondPart;
 					index = joke.IndexOf("Chuck");
 					if (index==-1)
 						index = joke.IndexOf("CHUCK");
+					if (index==-1)
+						break;
+					string firstPart = joke.Substring(0, index);
+					string secondPart = joke.Substring(0 + index + "Chuck Norris".Length, joke.Length - (index + "Chuck Norris".Length));
+					joke = firstPart + firstname+ " "  + lastname + secondPart;
 				}
 				return joke;
     		}
