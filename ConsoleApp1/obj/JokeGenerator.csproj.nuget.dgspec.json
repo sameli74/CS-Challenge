@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\snowwhite\\Desktop\\CS-Challenge-master\\ConsoleApp1\\JokeGenerator.csproj": {}
+    "C:\\Users\\snowwhite\\Desktop\\CS-Challenge-master\\CS-Challenge\\ConsoleApp1\\JokeGenerator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\snowwhite\\Desktop\\CS-Challenge-master\\ConsoleApp1\\JokeGenerator.csproj": {
+    "C:\\Users\\snowwhite\\Desktop\\CS-Challenge-master\\CS-Challenge\\ConsoleApp1\\JokeGenerator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\snowwhite\\Desktop\\CS-Challenge-master\\ConsoleApp1\\JokeGenerator.csproj",
+        "projectUniqueName": "C:\\Users\\snowwhite\\Desktop\\CS-Challenge-master\\CS-Challenge\\ConsoleApp1\\JokeGenerator.csproj",
         "projectName": "JokeGenerator",
-        "projectPath": "C:\\Users\\snowwhite\\Desktop\\CS-Challenge-master\\ConsoleApp1\\JokeGenerator.csproj",
+        "projectPath": "C:\\Users\\snowwhite\\Desktop\\CS-Challenge-master\\CS-Challenge\\ConsoleApp1\\JokeGenerator.csproj",
         "packagesPath": "C:\\Users\\snowwhite\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\snowwhite\\Desktop\\CS-Challenge-master\\ConsoleApp1\\obj\\",
+        "outputPath": "C:\\Users\\snowwhite\\Desktop\\CS-Challenge-master\\CS-Challenge\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\snowwhite\\AppData\\Roaming\\NuGet\\NuGet.Config"

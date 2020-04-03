@@ -11,8 +11,7 @@ namespace ConsoleApp1
     class Program
     {
         static HashSet<string> categories=new HashSet<string>();
-        static void Main(string[] args)
-        {
+        static void Main(string[] args){
             getCategories();
             while (true){
                 print_main_menu();
@@ -31,9 +30,8 @@ namespace ConsoleApp1
                     Console.WriteLine("\nThe input is not valid. Please make a new selection.");
                     continue;
                 }
-                    
-            }
 
+            }
         }
         private static void DisplaySet(HashSet<string> categories){
             foreach (string i in categories)
@@ -59,7 +57,7 @@ namespace ConsoleApp1
                 if (n>0 && n<=10)
                     break;
                 else
-                   Console.WriteLine("The input format is wrong. Please choose a proper option"); 
+                   Console.WriteLine("The input format is wrong. Please choose a proper option");
             }
             return n;
         }
@@ -76,12 +74,12 @@ namespace ConsoleApp1
                     name=null;
                     break;
                 }
-                    
+
                 else if (random_name=='q')
                     System.Environment.Exit(1);
                 else
                     Console.WriteLine("\nThe input format is wrong. Please choose a proper option");
-                
+
             }
             return name;
         }
@@ -120,7 +118,7 @@ namespace ConsoleApp1
                 else if (selection=='q')
                     System.Environment.Exit(1);
                 else
-                    Console.WriteLine("\nThe input format is wrong. Please choose a proper option"); 
+                    Console.WriteLine("\nThe input format is wrong. Please choose a proper option");
             }
         }
 
@@ -131,22 +129,19 @@ namespace ConsoleApp1
         }
 
 
-        private static string[] GetRandomJokes(string category, int number, Tuple<string, string> name)
-        {
+        private static string[] GetRandomJokes(string category, int number, Tuple<string, string> name){
             new JsonFeed("https://api.chucknorris.io");
             return JsonFeed.GetRandomJokes(name?.Item1, name?.Item2, category, number);
         }
 
-        private static void getCategories()
-        {
+        private static void getCategories(){
             new JsonFeed("https://api.chucknorris.io/jokes/");
             string[] cat=JsonFeed.GetCategories();
             foreach (var c in cat)
-				categories.Add(c);
+      				categories.Add(c);
         }
 
-        private static Tuple<string, string> GetNames()
-        {
+        private static Tuple<string, string> GetNames(){
             new JsonFeed("https://randomuser.me/api/?format=json/");
             dynamic result = JsonFeed.Getnames();
             return Tuple.Create(result.results[0].name.first.ToString(), result.results[0].name.last.ToString());

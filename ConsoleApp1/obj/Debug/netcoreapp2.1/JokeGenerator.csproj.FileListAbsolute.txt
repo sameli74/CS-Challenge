@@ -10,3 +10,15 @@ C:\Users\snowwhite\Desktop\CS-Challenge-master\ConsoleApp1\obj\Debug\netcoreapp2
 C:\Users\snowwhite\Desktop\CS-Challenge-master\ConsoleApp1\obj\Debug\netcoreapp2.1\JokeGenerator.dll
 C:\Users\snowwhite\Desktop\CS-Challenge-master\ConsoleApp1\obj\Debug\netcoreapp2.1\JokeGenerator.pdb
 C:\Users\snowwhite\Desktop\CS-Challenge-master\ConsoleApp1\obj\Debug\netcoreapp2.1\JokeGenerator.genruntimeconfig.cache
+C:\Users\snowwhite\Desktop\CS-Challenge-master\CS-Challenge\ConsoleApp1\bin\Debug\netcoreapp2.1\JokeGenerator.deps.json
+C:\Users\snowwhite\Desktop\CS-Challenge-master\CS-Challenge\ConsoleApp1\bin\Debug\netcoreapp2.1\JokeGenerator.runtimeconfig.json
+C:\Users\snowwhite\Desktop\CS-Challenge-master\CS-Challenge\ConsoleApp1\bin\Debug\netcoreapp2.1\JokeGenerator.runtimeconfig.dev.json
+C:\Users\snowwhite\Desktop\CS-Challenge-master\CS-Challenge\ConsoleApp1\bin\Debug\netcoreapp2.1\JokeGenerator.dll
+C:\Users\snowwhite\Desktop\CS-Challenge-master\CS-Challenge\ConsoleApp1\bin\Debug\netcoreapp2.1\JokeGenerator.pdb
+C:\Users\snowwhite\Desktop\CS-Challenge-master\CS-Challenge\ConsoleApp1\obj\Debug\netcoreapp2.1\JokeGenerator.csproj.CoreCompileInputs.cache
+C:\Users\snowwhite\Desktop\CS-Challenge-master\CS-Challenge\ConsoleApp1\obj\Debug\netcoreapp2.1\JokeGenerator.AssemblyInfoInputs.cache
+C:\Users\snowwhite\Desktop\CS-Challenge-master\CS-Challenge\ConsoleApp1\obj\Debug\netcoreapp2.1\JokeGenerator.AssemblyInfo.cs
+C:\Users\snowwhite\Desktop\CS-Challenge-master\CS-Challenge\ConsoleApp1\obj\Debug\netcoreapp2.1\JokeGenerator.dll
+C:\Users\snowwhite\Desktop\CS-Challenge-master\CS-Challenge\ConsoleApp1\obj\Debug\netcoreapp2.1\JokeGenerator.pdb
+C:\Users\snowwhite\Desktop\CS-Challenge-master\CS-Challenge\ConsoleApp1\obj\Debug\netcoreapp2.1\JokeGenerator.genruntimeconfig.cache
+C:\Users\snowwhite\Desktop\CS-Challenge-master\CS-Challenge\ConsoleApp1\obj\Debug\netcoreapp2.1\JokeGenerator.csprojAssemblyReference.cache
