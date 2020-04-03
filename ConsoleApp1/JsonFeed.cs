@@ -49,6 +49,9 @@ namespace ConsoleApp1{
 				joke=replace_word(joke, "he", "she");
 				joke=replace_word(joke, "He", "She");
 				joke=replace_word(joke, "HE", "SHE");
+				joke=replace_word(joke, "him", "her");
+				joke=replace_word(joke, "Him", "Her");
+				joke=replace_word(joke, "HIM", "HER");
 				return joke;
 
 			}
