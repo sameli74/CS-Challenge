@@ -61,7 +61,7 @@ namespace ConsoleApp1{
     				string joke = Task.FromResult(client.GetStringAsync(url).Result).Result;
     				if (firstname != null && lastname != null){
     					joke=replace_name(joke, firstname, lastname);
-						if (gender=="femaile")
+						if (gender=="female")
 							joke=replace_gender(joke);
                 }
     				random_jokes[num-1]=JsonConvert.DeserializeObject<dynamic>(joke).value ;
