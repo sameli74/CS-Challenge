@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "qXG7XPL73HIoiqTVwZHshyHJMfZCOFVrpbYw0GviFC1xk/48dujipeF0IzKgRsB1EZG2ZaIjqhXtb3yNjcJ3zQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\snowwhite\\Desktop\\CS-Challenge-master\\ConsoleApp1\\JokeGenerator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\snowwhite\\.nuget\\packages\\microsoft.netcore.app\\2.1.0\\microsoft.netcore.app.2.1.0.nupkg.sha512",
+    "C:\\Users\\snowwhite\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.1.0\\microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",
+    "C:\\Users\\snowwhite\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\2.1.0\\microsoft.netcore.dotnethostpolicy.2.1.0.nupkg.sha512",
+    "C:\\Users\\snowwhite\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.1.0\\microsoft.netcore.dotnethostresolver.2.1.0.nupkg.sha512",
+    "C:\\Users\\snowwhite\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
+    "C:\\Users\\snowwhite\\.nuget\\packages\\microsoft.netcore.targets\\2.1.0\\microsoft.netcore.targets.2.1.0.nupkg.sha512",
+    "C:\\Users\\snowwhite\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\snowwhite\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
