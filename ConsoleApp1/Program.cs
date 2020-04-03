@@ -61,8 +61,8 @@ namespace ConsoleApp1
             }
             return n;
         }
-        private static Tuple<string, string>select_name(){
-                Tuple<string, string> name;
+        private static Tuple<string, string, string>select_name(){
+                Tuple<string, string, string> name;
                 while (true){
                 Console.Write("\n\nWould you like to use a random name?[y|n|q]: ");
                 char random_name=Char.ToLower(Console.ReadKey().KeyChar);
@@ -84,7 +84,7 @@ namespace ConsoleApp1
             return name;
         }
 
-        private static void generate_jokes(Tuple<string, string> name, int n){
+        private static void generate_jokes(Tuple<string, string, string> name, int n){
             string[] jokes;
             bool success=false;
             while(success==false){
@@ -123,15 +123,15 @@ namespace ConsoleApp1
         }
 
         private static void random_joke(){
-            Tuple<string, string>name=select_name();
+            Tuple<string, string, string>name=select_name();
             int n=select_num_jokes();
             generate_jokes(name, n);
         }
 
 
-        private static string[] GetRandomJokes(string category, int number, Tuple<string, string> name){
+        private static string[] GetRandomJokes(string category, int number, Tuple<string, string, string> name){
             new JsonFeed("https://api.chucknorris.io");
-            return JsonFeed.GetRandomJokes(name?.Item1, name?.Item2, category, number);
+            return JsonFeed.GetRandomJokes(name?.Item1, name?.Item2, name?.Item3, category, number);
         }
 
         private static void getCategories(){
@@ -141,10 +141,11 @@ namespace ConsoleApp1
       				categories.Add(c);
         }
 
-        private static Tuple<string, string> GetNames(){
+        private static Tuple<string, string, string> GetNames(){
             new JsonFeed("https://randomuser.me/api/?format=json/");
             dynamic result = JsonFeed.Getnames();
-            return Tuple.Create(result.results[0].name.first.ToString(), result.results[0].name.last.ToString());
+            return Tuple.Create(result.results[0].name.first.ToString(), result.results[0].name.last.ToString(),
+                                 result.results[0].gender.ToString());
         }
     }
 }

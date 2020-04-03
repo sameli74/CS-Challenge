@@ -24,20 +24,35 @@ namespace ConsoleApp1{
     			return url;
     		}
     		private static string replace_name(string joke, string firstname, string lastname){
-    			int index = joke.IndexOf("Chuck");
-				while (index!=-1){
-					index = joke.IndexOf("Chuck");
-					if (index==-1)
-						index = joke.IndexOf("CHUCK");
+				joke=replace_word(joke, "Chuck Norris", firstname+" "+lastname);
+				joke=replace_word(joke, "CHUCk NORRIS", firstname+" "+lastname);
+				return joke;
+    		}
+
+			private static string replace_word(string joke, string s1, string s2){
+				int index=0;
+					while (index!=-1){
+					index = joke.IndexOf(s1);
 					if (index==-1)
 						break;
 					string firstPart = joke.Substring(0, index);
-					string secondPart = joke.Substring(0 + index + "Chuck Norris".Length, joke.Length - (index + "Chuck Norris".Length));
-					joke = firstPart + firstname+ " "  + lastname + secondPart;
+					string secondPart = joke.Substring(0 + index + s1.Length, joke.Length - (index + s1.Length));
+					joke = firstPart + s2 + secondPart;
 				}
 				return joke;
-    		}
-    		public static string[] GetRandomJokes(string firstname, string lastname, string category, int num){
+			}
+			private static string replace_gender(string joke){
+				
+				joke=replace_word(joke, "his", "her");
+				joke=replace_word(joke, "His", "Her");
+				joke=replace_word(joke, "HIS", "HER");
+				joke=replace_word(joke, "he", "she");
+				joke=replace_word(joke, "He", "She");
+				joke=replace_word(joke, "HE", "SHE");
+				return joke;
+
+			}
+    		public static string[] GetRandomJokes(string firstname, string lastname, string gender, string category, int num){
     			HttpClient client = new HttpClient();
     			client.BaseAddress = new Uri(_url);
     			string[] random_jokes=new String[num];
@@ -46,6 +61,8 @@ namespace ConsoleApp1{
     				string joke = Task.FromResult(client.GetStringAsync(url).Result).Result;
     				if (firstname != null && lastname != null){
     					joke=replace_name(joke, firstname, lastname);
+						if (gender=="femaile")
+							joke=replace_gender(joke);
                 }
     				random_jokes[num-1]=JsonConvert.DeserializeObject<dynamic>(joke).value ;
     				num--;
