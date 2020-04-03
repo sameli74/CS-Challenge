@@ -32,12 +32,12 @@ namespace ConsoleApp1{
 			private static string replace_word(string joke, string s1, string s2){
 				int index=0;
 					while (index!=-1){
-					index = joke.IndexOf(s1);
-					if (index==-1)
-						break;
-					string firstPart = joke.Substring(0, index);
-					string secondPart = joke.Substring(0 + index + s1.Length, joke.Length - (index + s1.Length));
-					joke = firstPart + s2 + secondPart;
+						index = joke.IndexOf(s1);
+						if (index==-1)
+							break;
+						string firstPart = joke.Substring(0, index);
+						string secondPart = joke.Substring(0 + index + s1.Length, joke.Length - (index + s1.Length));
+						joke = firstPart + s2 + secondPart;
 				}
 				return joke;
 			}
@@ -46,9 +46,9 @@ namespace ConsoleApp1{
 				joke=replace_word(joke, "his", "her");
 				joke=replace_word(joke, "His", "Her");
 				joke=replace_word(joke, "HIS", "HER");
-				joke=replace_word(joke, "he", "she");
-				joke=replace_word(joke, "He", "She");
-				joke=replace_word(joke, "HE", "SHE");
+				joke=replace_word(joke, "he ", "she");
+				joke=replace_word(joke, "He ", "She");
+				joke=replace_word(joke, "HE ", "SHE");
 				joke=replace_word(joke, "him", "her");
 				joke=replace_word(joke, "Him", "Her");
 				joke=replace_word(joke, "HIM", "HER");
